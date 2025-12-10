@@ -1,0 +1,174 @@
+
+{
+  "cb_users": [
+    {
+      "id": "u-admin-001",
+      "name": "Admin User",
+      "email": "admin@curries.com",
+      "password": "admin",
+      "role": "admin",
+      "provider": "email",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u-customer-001",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password",
+      "role": "customer",
+      "provider": "email",
+      "loyaltyPoints": 150,
+      "createdAt": "2024-01-02T00:00:00.000Z"
+    }
+  ],
+  "cb_menu_items": [
+    {
+      "id": "1",
+      "name": "Butter Chicken Burger",
+      "description": "Crispy chicken fillet tossed in rich makhani sauce, served in a brioche bun.",
+      "price": 14.99,
+      "category": "Burgers",
+      "image": "https://picsum.photos/seed/burger1/400/300",
+      "isVeg": false,
+      "isSpicy": false,
+      "isChefSpecial": true
+    },
+    {
+      "id": "2",
+      "name": "Paneer Tikka Burger",
+      "description": "Grilled paneer steak marinated in tandoori spices with mint chutney mayo.",
+      "price": 12.99,
+      "category": "Burgers",
+      "image": "https://picsum.photos/seed/burger2/400/300",
+      "isVeg": true,
+      "isSpicy": true,
+      "isChefSpecial": false
+    },
+    {
+      "id": "3",
+      "name": "Lamb Rogan Josh",
+      "description": "Slow-cooked lamb with aromatic Kashmiri spices and yogurt.",
+      "price": 18.99,
+      "category": "Curries",
+      "image": "https://picsum.photos/seed/curry1/400/300",
+      "isVeg": false,
+      "isSpicy": true,
+      "isChefSpecial": true
+    },
+    {
+      "id": "4",
+      "name": "Dal Makhani",
+      "description": "Black lentils cooked overnight with butter and cream.",
+      "price": 11.99,
+      "category": "Curries",
+      "image": "https://picsum.photos/seed/curry2/400/300",
+      "isVeg": true,
+      "isSpicy": false,
+      "isChefSpecial": false
+    },
+    {
+      "id": "5",
+      "name": "Garlic Naan",
+      "description": "Leavened bread baked in a clay oven topped with garlic and cilantro.",
+      "price": 3.99,
+      "category": "Breads",
+      "image": "https://picsum.photos/seed/naan1/400/300",
+      "isVeg": true,
+      "isSpicy": false,
+      "isChefSpecial": false
+    },
+    {
+      "id": "6",
+      "name": "Mango Lassi",
+      "description": "Refreshing yogurt drink blended with sweet mango pulp.",
+      "price": 4.99,
+      "category": "Drinks",
+      "image": "https://picsum.photos/seed/lassi/400/300",
+      "isVeg": true,
+      "isSpicy": false,
+      "isChefSpecial": false
+    },
+    {
+      "id": "7",
+      "name": "Samosa Chat",
+      "description": "Crushed samosas topped with chickpea curry, chutneys and yogurt.",
+      "price": 8.99,
+      "category": "Appetizers",
+      "image": "https://picsum.photos/seed/samosa/400/300",
+      "isVeg": true,
+      "isSpicy": true,
+      "isChefSpecial": false
+    },
+    {
+      "id": "8",
+      "name": "Gulab Jamun Cheesecake",
+      "description": "Fusion dessert with saffron cheesecake base and gulab jamun chunks.",
+      "price": 9.99,
+      "category": "Desserts",
+      "image": "https://picsum.photos/seed/dessert/400/300",
+      "isVeg": true,
+      "isSpicy": false,
+      "isChefSpecial": true
+    },
+    {
+      "id": "9",
+      "name": "Chicken Biryani",
+      "description": "Aromatic basmati rice cooked with tender chicken, saffron, and whole spices.",
+      "price": 16.99,
+      "category": "Rice",
+      "image": "https://picsum.photos/seed/biryani/400/300",
+      "isVeg": false,
+      "isSpicy": true,
+      "isChefSpecial": true
+    },
+    {
+      "id": "10",
+      "name": "Paneer Kathi Roll",
+      "description": "Spiced paneer cubes wrapped in a paratha with onions and mint sauce.",
+      "price": 10.99,
+      "category": "Rolls",
+      "image": "https://picsum.photos/seed/roll/400/300",
+      "isVeg": true,
+      "isSpicy": true,
+      "isChefSpecial": false
+    }
+  ],
+  "cb_orders": [
+    {
+      "id": "CB-123456",
+      "userId": "u-customer-001",
+      "customerName": "John Doe",
+      "items": [
+        {
+          "id": "1",
+          "name": "Butter Chicken Burger",
+          "price": 14.99,
+          "quantity": 2,
+          "image": "https://picsum.photos/seed/burger1/400/300"
+        }
+      ],
+      "total": 29.98,
+      "status": "Delivered",
+      "date": "2024-03-15T10:30:00.000Z",
+      "paymentMethod": "card",
+      "address": "123 Main St, New York, NY",
+      "transactionId": "TXN-99887766"
+    }
+  ],
+  "cb_transactions": [
+    {
+      "id": "TXN-99887766",
+      "orderId": "CB-123456",
+      "userId": "u-customer-001",
+      "amount": 29.98,
+      "method": "card",
+      "status": "success",
+      "date": "2024-03-15T10:29:55.000Z",
+      "metadata": {
+        "last4": "4242"
+      }
+    }
+  ],
+  "cb_reservations": [],
+  "cb_subscribers": []
+}
